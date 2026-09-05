@@ -1,23 +1,1482 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+    <!-- JSON-LD Structured Data for Search Engines & LLM Knowledge Extraction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TechArticle",
+          "@id": "https://auto.reliabledone.com/tire-spec-guide#article",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://auto.reliabledone.com/#website",
+            "name": "오토모빌 테크 인포 센터",
+            "url": "https://auto.reliabledone.com"
+          },
+          "headline": "타이어 사이즈 보는 법 2026년 최신 규격 해독 및 성능 지표 완벽 가이드",
+          "description": "타이어 사이드월에 각인된 단면폭, 편평비, 구조, 휠 직경, 하중지수, 속도기호, DOT 생산주차 해독법과 주요 제조사 모델별 규격 및 실구매 비용 심층 분석",
+          "inLanguage": "ko-KR",
+          "datePublished": "2026-01-15T09:00:00+09:00",
+          "dateModified": "2026-03-01T14:30:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "타이어 규격 및 안전 주행 리서치 랩"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "모빌리티 테크놀로지 포털",
+            "url": "https://auto.reliabledone.com"
+          }
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://auto.reliabledone.com/tire-spec-guide#howto",
+          "name": "타이어 사이즈 식별 및 규격 확인 6단계",
+          "description": "차량에 장착된 타이어 측면의 암호화된 표기를 순서대로 읽고 내 차에 맞는 최적 규격을 판별하는 절차",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "타이어 사이드월 단면폭 확인",
+              "text": "타이어 측면에 표기된 세 자리 숫자 예컨대 245를 확인합니다. 이는 지면과 닿는 타이어의 가로 폭을 밀리미터 단위로 나타낸 수치입니다."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "편평비 백분율 판별",
+              "text": "단면폭 뒤 슬래시 기호 다음에 오는 두 자리 숫자 예컨대 45를 확인합니다. 이는 단면폭 대비 타이어 옆면 높이의 비율을 퍼센트로 나타낸 수치입니다."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "구조 및 휠 림 외경 확인",
+              "text": "영문 알파벳 R과 이어지는 숫자 예컨대 18을 확인합니다. R은 래디얼 내부 구조를 의미하며 18은 장착 가능한 휠의 직경을 인치 단위로 표현한 값입니다."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "하중지수 정격 부하 해독",
+              "text": "림 직경 뒤에 이어지는 두 자리 또는 세 자리 숫자 예컨대 100을 확인하여 단일 타이어가 견딜 수 있는 최대 허용 하중 중량을 대조합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "한계 속도기호 확인",
+              "text": "하중지수 바로 옆에 각인된 영문 알파벳 예컨대 W를 확인하여 타이어가 지속 주행할 수 있는 법정 설계 최고 한계 속도를 대조합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 6,
+              "name": "DOT 제조주차 및 생산년도 판독",
+              "text": "DOT 각인 뒤 타원형 테두리 내부의 마지막 네 자리 숫자 예컨대 2326을 확인하여 2026년 23주차에 제조되었음을 파악합니다."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://auto.reliabledone.com/tire-spec-guide#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "타이어 사이즈를 순정과 다르게 장착해도 차량 운행에 지장이 없나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "순정 규격과 외경 오차가 플러스 마이너스 3퍼센트 이내인 경우에는 속도계 오차나 휠 하우스 간섭 문제없이 장착이 가능합니다. 다만 편평비가 너무 낮아지면 승차감이 딱딱해지고 림 손상 위험이 커지며 폭이 과도하게 넓어지면 연비 하락 및 휀더 간섭이 발생할 수 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "타이어 렌탈 계약 요금제와 일시불 구매 중 어느 방식이 더 유리한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "초기 목돈 지출을 피하고 12개월 또는 24개월 무약정 내지 약정 분납을 원하며 위치교환 정기점검 휠얼라인먼트 무상 케어를 중요시하는 소비자는 렌탈 요금제가 유리합니다. 반면 장기적인 총비용 관점에서 최저가를 원한다면 온라인 다이렉트 주문 후 전문 장착점을 이용하는 일시불 구매가 가장 경제적입니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "타이어 유통기한과 DOT 생산주차 기준 교체 권장 시점은 언제인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "타이어는 트레드 마모가 남아있더라도 고무 컴파운드의 자연 경화 현상이 진행되므로 생산일로부터 5년이 경과하면 안전 점검이 필수적이며 6년 이상 경과 시 주행거리와 무관하게 교체를 권장합니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-slate: #1e293b;
+            --primary-indigo: #3730a3;
+            --accent-teal: #0f766e;
+            --accent-soft-blue: #4f46e5;
+            --bg-canvas: #f8fafc;
+            --bg-card: #ffffff;
+            --border-subtle: #e2e8f0;
+            --border-strong: #cbd5e1;
+            --text-main: #0f172a;
+            --text-secondary: #334155;
+            --text-muted: #64748b;
+            --badge-bg: #eef2ff;
+            --badge-text: #312e81;
+            --table-header: #312e81;
+            --table-zebra: #f1f5f9;
+            --callout-bg: #f0fdfa;
+            --callout-border: #0d9488;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Pretendard", sans-serif;
+            line-height: 1.85;
+            letter-spacing: -0.015em;
+            background-color: var(--bg-canvas);
+            color: var(--text-main);
+            word-break: keep-all;
+            text-rendering: optimizeLegibility;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #1e293b 100%);
+            color: #ffffff;
+            padding: 4.5rem 1.5rem 3.5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-container {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .header-tag {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #e0e7ff;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.35rem 1.1rem;
+            border-radius: 9999px;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(4px);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            line-height: 1.35;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.025em;
+        }
+
+        header p {
+            font-size: 1.125rem;
+            max-width: 820px;
+            margin: 0 auto;
+            color: #cbd5e1;
+            font-weight: 400;
+        }
+
+        nav.toc-nav {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-subtle);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        nav.toc-nav ul {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        nav.toc-nav a {
+            display: block;
+            padding: 1.1rem 1.25rem;
+            font-size: 0.935rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        nav.toc-nav a:hover, nav.toc-nav a:focus {
+            color: var(--primary-indigo);
+            border-bottom-color: var(--primary-indigo);
+            background-color: #f8fafc;
+        }
+
+        main {
+            max-width: 1160px;
+            margin: 2.5rem auto 5rem;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: var(--bg-card);
+            padding: 3.25rem;
+            margin-bottom: 3rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
+        }
+
+        h2 {
+            font-size: 1.95rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10%;
+            height: 80%;
+            width: 5px;
+            background-color: var(--primary-indigo);
+            border-radius: 4px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--primary-slate);
+            margin-top: 2.75rem;
+            margin-bottom: 1.1rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--border-subtle);
+            padding-bottom: 0.6rem;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1.35rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        .sidewall-visualizer {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 14px;
+            padding: 2.5rem 2rem;
+            color: #ffffff;
+            margin: 2rem 0;
+            border: 1px solid #334155;
+        }
+
+        .sidewall-code-display {
+            font-family: "SF Pro Display", -apple-system, monospace;
+            font-size: 2.25rem;
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: 0.12em;
+            color: #e2e8f0;
+            padding: 1.5rem 1rem;
+            background-color: rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidewall-code-display span {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .code-width { color: #38bdf8; background: rgba(56, 189, 248, 0.15); }
+        .code-profile { color: #4ade80; background: rgba(74, 222, 128, 0.15); }
+        .code-radial { color: #fbbf24; background: rgba(251, 191, 36, 0.15); }
+        .code-rim { color: #f472b6; background: rgba(244, 114, 182, 0.15); }
+        .code-load { color: #a78bfa; background: rgba(167, 139, 250, 0.15); }
+        .code-speed { color: #f87171; background: rgba(248, 113, 113, 0.15); }
+
+        .sidewall-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .sidewall-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            padding: 1.25rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .sidewall-card .card-term {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            letter-spacing: 0.05em;
+        }
+
+        .sidewall-card .card-value {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .sidewall-card .card-desc {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            line-height: 1.55;
+            margin-bottom: 0;
+        }
+
+        .calculator-box {
+            background-color: #f8fafc;
+            border: 2px solid var(--border-subtle);
+            border-radius: 14px;
+            padding: 2.25rem;
+            margin: 2rem 0;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .calc-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .calc-group label {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .calc-group select, .calc-group input {
+            padding: 0.85rem;
+            border: 1px solid var(--border-strong);
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #ffffff;
+            color: var(--text-main);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .calc-group select:focus, .calc-group input:focus {
+            border-color: var(--primary-indigo);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+        }
+
+        .calc-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn-calc {
+            flex: 1;
+            background-color: var(--primary-indigo);
+            color: #ffffff;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn-calc:hover {
+            background-color: #2e2889;
+        }
+
+        .calc-result-panel {
+            margin-top: 2rem;
+            padding: 1.75rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 1px solid var(--border-subtle);
+            display: none;
+        }
+
+        .calc-result-panel.visible {
+            display: block;
+        }
+
+        .result-metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .metric-card {
+            background-color: #f1f5f9;
+            padding: 1.25rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.35rem;
+        }
+
+        .metric-val {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        table.spec-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 2rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border-subtle);
+            font-size: 0.95rem;
+        }
+
+        table.spec-table thead {
+            background-color: var(--table-header);
+            color: #ffffff;
+        }
+
+        table.spec-table th, table.spec-table td {
+            padding: 1.05rem 1.15rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-subtle);
+            line-height: 1.5;
+        }
+
+        table.spec-table tbody tr:nth-child(even) {
+            background-color: var(--table-zebra);
+        }
+
+        table.spec-table tbody tr:hover {
+            background-color: #e2e8f0;
+        }
+
+        .info-callout {
+            background-color: var(--callout-bg);
+            border-left: 5px solid var(--callout-border);
+            padding: 1.5rem 1.75rem;
+            border-radius: 0 10px 10px 0;
+            margin: 2rem 0;
+        }
+
+        .info-callout h4 {
+            color: var(--accent-teal);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-callout p {
+            margin-bottom: 0;
+            color: #134e4a;
+            font-size: 0.98rem;
+        }
+
+        .faq-accordion {
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: border-color 0.2s;
+        }
+
+        .faq-item:hover {
+            border-color: var(--border-strong);
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 1.35rem 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question .indicator {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary-indigo);
+            background-color: #e0e7ff;
+            padding: 0.25rem 0.65rem;
+            border-radius: 6px;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            display: none;
+            color: var(--text-secondary);
+            font-size: 1.02rem;
+            line-height: 1.75;
+            border-top: 1px solid var(--border-subtle);
+            background-color: #fcfcfd;
+        }
+
+        .faq-answer.open {
+            display: block;
+            padding-top: 1.35rem;
+        }
+
+        .reference-cluster {
+            background-color: #f1f5f9;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .reference-cluster h3 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-size: 1.25rem;
+            color: var(--primary-slate);
+        }
+
+        .reference-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .reference-list li {
+            margin-bottom: 0.85rem;
+            padding-bottom: 0.85rem;
+            border-bottom: 1px dashed var(--border-strong);
+        }
+
+        .reference-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .reference-list a {
+            color: var(--primary-indigo);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .reference-list a:hover {
+            text-decoration: underline;
+        }
+
+        .reference-list .site-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .tag-cloud span {
+            background-color: #f1f5f9;
+            color: #475569;
+            font-size: 0.88rem;
+            font-weight: 600;
+            padding: 0.4rem 0.85rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 3rem 1.25rem 2.5rem;
+            }
+
+            header h1 {
+                font-size: 1.85rem;
+            }
+
+            section {
+                padding: 1.75rem 1.25rem;
+                border-radius: 12px;
+            }
+
+            .sidewall-code-display {
+                font-size: 1.45rem;
+                letter-spacing: 0.05em;
+            }
+
+            .calc-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="header-tag">2026 오토모빌 테크놀로지 스펙 분석</span>
+            <h1>타이어 사이즈 보는 법과 규격 완벽 판독 가이드</h1>
+            <p>차량 사이드월 각인 기호부터 단면폭 편평비 림 직경 하중지수 속도기호 제조일자 해석 및 35개 주요 타이어 브랜드 모델별 실구매 비용과 규격 오차 계산 공식 심층 정리</p>
+        </div>
+    </header>
+
+    <nav class="toc-nav" aria-label="문서 핵심 목차">
+        <ul>
+            <li><a href="#section-anatomy">사이드월 구조 해독</a></li>
+            <li><a href="#section-calculator">타이어 규격 오차 계산기</a></li>
+            <li><a href="#section-deep-dive">스펙별 세부 지표 분석</a></li>
+            <li><a href="#section-models-2026">35대 핵심 타이어 모델 분석</a></li>
+            <li><a href="#section-purchase-strategy">구매 채널 및 렌탈 비교</a></li>
+            <li><a href="#section-community-ai">커뮤니티 성지 및 AI 상담</a></li>
+            <li><a href="#section-faq">자주 묻는 질문</a></li>
+            <li><a href="#section-references">공식 참조 출처</a></li>
+        </ul>
     </nav>
+
     <main>
-      <h1>Home page</h1>
+
+        <!-- SECTION 1: 사이드월 구조 및 표기 체계 -->
+        <section id="section-anatomy">
+            <h2>타이어 사이즈 보는 법의 핵심 원리와 사이드월 표기 체계</h2>
+            <p>자동차 타이어는 엔진의 강력한 토크와 제동 시스템의 감속력을 지면에 전달하는 유일한 접지 부품입니다. 주행 안정성, 제동 거리, 승차감, 연비 효율을 결정짓는 가장 중요한 물리적 변수는 바로 차량 제원에 완벽하게 부합하는 타이어 규격을 선택하는 일입니다. 운전자가 자신의 타이어 측면인 사이드월을 육안으로 확인했을 때 마주하게 되는 복합적인 문자열은 국제 표준 규격 기구인 ETRTO와 ISO의 통일된 규격 표기 방식을 준수하고 있습니다.</p>
+            <p>가장 일반적인 승용 및 SUV 규격인 <strong>245/45R18 100W</strong> 규격을 기준으로 각각의 위치에 배열된 숫자와 영문 알파벳이 어떠한 물리적 치수와 공학적 한계를 뜻하는지 체계적으로 분해하여 분석합니다.</p>
+
+            <div class="sidewall-visualizer">
+                <div class="sidewall-code-display">
+                    <span class="code-width">245</span> / 
+                    <span class="code-profile">45</span> 
+                    <span class="code-radial">R</span> 
+                    <span class="code-rim">18</span> &nbsp;
+                    <span class="code-load">100</span>
+                    <span class="code-speed">W</span>
+                </div>
+
+                <div class="sidewall-grid">
+                    <div class="sidewall-card">
+                        <div class="card-term" style="color: #38bdf8;">1. 단면폭 Section Width</div>
+                        <div class="card-value">245 mm</div>
+                        <p class="card-desc">휠에 조립되어 규정 공기압을 충전한 상태에서 사이드월의 문자나 패턴 돌출부를 제외한 타이어 양 측면 사이의 최대 직선 폭을 의미합니다.</p>
+                    </div>
+                    <div class="sidewall-card">
+                        <div class="card-term" style="color: #4ade80;">2. 편평비 Aspect Ratio</div>
+                        <div class="card-value">45 %</div>
+                        <p class="card-desc">타이어 단면폭에 대한 단면 높이의 백분율 비율입니다. 편평비가 낮을수록 코너링 안정성이 개선되나 노면 충격 흡수력은 감소합니다.</p>
+                    </div>
+                    <div class="sidewall-card">
+                        <div class="card-term" style="color: #fbbf24;">3. 구조 Radial Construction</div>
+                        <div class="card-value">R (래디얼)</div>
+                        <p class="card-desc">타이어 내부 골격인 카카스 코드가 주행 방향 기준 90도 각도로 배치된 현대 자동차의 표준 래디얼 구조를 상징합니다.</p>
+                    </div>
+                    <div class="sidewall-card">
+                        <div class="card-term" style="color: #f472b6;">4. 림 직경 Rim Diameter</div>
+                        <div class="card-value">18 Inch</div>
+                        <p class="card-desc">타이어 비트가 체결되는 휠의 바깥 테두리 림 직경을 인치 단위로 표기한 규격입니다. 휠 림 사이즈와 반드시 일치해야 장착됩니다.</p>
+                    </div>
+                    <div class="sidewall-card">
+                        <div class="card-term" style="color: #a78bfa;">5. 하중지수 Load Index</div>
+                        <div class="card-value">100 (최대 800kg)</div>
+                        <p class="card-desc">타이어 1개가 규정 공기압 조건에서 안전하게 지탱할 수 있는 최대 허용 하중 능력치 코드입니다. 수치가 높을수록 고하중을 버팁니다.</p>
+                    </div>
+                    <div class="sidewall-card">
+                        <div class="card-term" style="color: #f87171;">6. 속도기호 Speed Rating</div>
+                        <div class="card-value">W (최고 270km/h)</div>
+                        <p class="card-desc">하중지수에 명시된 최대 하중을 싣고 타이어가 내구 한계 내에서 지속 운행 가능한 최고 설계 한계 속도를 정의합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>타이어 규격을 정확히 확인하는 장소는 차량 외부의 타이어 본체뿐만 아니라, 운전석 문을 열었을 때 B필러 차체 기둥 프레임에 부착된 타이어 공기압 및 표준 제원 라벨 스티커, 혹은 차량 연료 주입구 안쪽 커버 및 차량 취급 설명서 제원 페이지에서도 확인할 수 있습니다. 전륜 구동 기반 세단은 앞뒤 바퀴 규격이 동일한 경우가 대부분이나, 후륜 구동 고출력 세단이나 스포츠 쿠페 및 고성능 SUV의 경우 후륜 타이어의 접지력을 극대화하기 위해 전륜 245/40R19, 후륜 275/35R19와 같이 이종 규격을 사용하는 경우가 많으므로 전후륜 규격을 각각 분리 확인해야 합니다.</p>
+        </section>
+
+        <!-- SECTION 2: 인터랙티브 규격 오차 계산기 및 치수 수학적 공식 -->
+        <section id="section-calculator">
+            <h2>타이어 사이즈 규격 및 외경 오차 계산기</h2>
+            <p>타이어를 교체하거나 휠 인치업 인치다운을 진행할 때 가장 주의해야 하는 물리적 수치는 타이어의 전체 외경입니다. 외경이 달라지면 차량의 바퀴 1회전당 이동 거리가 변동되어 계기판 속도계와 실제 GPS 속도 사이에 중대한 오차가 발생하며 차체 휠 하우스 내부 서스펜션 암 및 휀더와의 간섭 위험이 발생합니다.</p>
+            <p>순정 규격과 변경 희망 규격을 선택하여 외경 차이, 단면 높이 차이, 속도계 오차 비율을 즉각 계산할 수 있습니다.</p>
+
+            <div class="calculator-box">
+                <div class="calc-grid">
+                    <div class="calc-group">
+                        <label for="orig-width">기존 순정 단면폭 (mm)</label>
+                        <select id="orig-width">
+                            <option value="195">195 mm</option>
+                            <option value="205">205 mm</option>
+                            <option value="215">215 mm</option>
+                            <option value="225">225 mm</option>
+                            <option value="235">235 mm</option>
+                            <option value="245" selected>245 mm</option>
+                            <option value="255">255 mm</option>
+                            <option value="265">265 mm</option>
+                            <option value="275">275 mm</option>
+                            <option value="285">285 mm</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label for="orig-profile">기존 편평비 (%)</label>
+                        <select id="orig-profile">
+                            <option value="35">35 %</option>
+                            <option value="40">40 %</option>
+                            <option value="45" selected>45 %</option>
+                            <option value="50">50 %</option>
+                            <option value="55">55 %</option>
+                            <option value="60">60 %</option>
+                            <option value="65">65 %</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label for="orig-rim">기존 휠 직경 (인치)</label>
+                        <select id="orig-rim">
+                            <option value="15">15 인치</option>
+                            <option value="16">16 인치</option>
+                            <option value="17">17 인치</option>
+                            <option value="18" selected>18 인치</option>
+                            <option value="19">19 인치</option>
+                            <option value="20">20 인치</option>
+                            <option value="21">21 인치</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="calc-grid">
+                    <div class="calc-group">
+                        <label for="new-width">비교 변경 단면폭 (mm)</label>
+                        <select id="new-width">
+                            <option value="195">195 mm</option>
+                            <option value="205">205 mm</option>
+                            <option value="215">215 mm</option>
+                            <option value="225">225 mm</option>
+                            <option value="235">235 mm</option>
+                            <option value="245">245 mm</option>
+                            <option value="255" selected>255 mm</option>
+                            <option value="265">265 mm</option>
+                            <option value="275">275 mm</option>
+                            <option value="285">285 mm</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label for="new-profile">비교 변경 편평비 (%)</label>
+                        <select id="new-profile">
+                            <option value="35">35 %</option>
+                            <option value="40" selected>40 %</option>
+                            <option value="45">45 %</option>
+                            <option value="50">50 %</option>
+                            <option value="55">55 %</option>
+                            <option value="60">60 %</option>
+                            <option value="65">65 %</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label for="new-rim">비교 변경 휠 직경 (인치)</label>
+                        <select id="new-rim">
+                            <option value="15">15 인치</option>
+                            <option value="16">16 인치</option>
+                            <option value="17">17 인치</option>
+                            <option value="18">18 인치</option>
+                            <option value="19" selected>19 인치</option>
+                            <option value="20">20 인치</option>
+                            <option value="21">21 인치</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="calc-actions">
+                    <button type="button" class="btn-calc" id="btn-run-calc">타이어 규격 오차 정밀 연산 실행</button>
+                </div>
+
+                <div class="calc-result-panel" id="calc-result-display">
+                    <h4>타이어 규격 치수 비교 분석 결과</h4>
+                    <div class="result-metric-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">기존 타이어 총 외경</div>
+                            <div class="metric-val" id="res-orig-dia">677.7 mm</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">변경 타이어 총 외경</div>
+                            <div class="metric-val" id="res-new-dia">686.6 mm</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">전체 외경 차이</div>
+                            <div class="metric-val" id="res-diff-mm">+8.9 mm</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">외경 오차율 (기준 대비)</div>
+                            <div class="metric-val" id="res-diff-pct">+1.31 %</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">시속 100km 주행시 계기판 실속도</div>
+                            <div class="metric-val" id="res-speed-err">101.3 km/h</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">규격 호환 안전성 판정</div>
+                            <div class="metric-val" id="res-safety-eval" style="color: #0f766e;">장착 적합 (안전)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-callout">
+                <h4>타이어 전체 외경 공식 해독법</h4>
+                <p>전체 외경 계산 공식은 <strong>휠 직경 곱하기 25.4 더하기 2 곱하기 단면폭 곱하기 편평비 나누기 100</strong> 입니다. 허용 안전 오차 범위는 통상 플러스 마이너스 3퍼센트 이내이며, 이를 초과할 경우 차체 전자제어 자세제어 장치인 ESC나 ABS 휠 스피드 센서의 회전수 인식 오류를 유발할 수 있습니다.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: 심층 세부 지표 분석 (하중지수, 속도기호, DOT, UTQG) -->
+        <section id="section-deep-dive">
+            <h2>스펙별 세부 지표 분석: 하중지수, 속도기호, DOT 제조주차</h2>
+            <p>타이어 사이즈의 물리적 치수 외에도 반드시 확인해야 하는 안전 등급 표기가 존재합니다. 특히 최근 출시되는 전기차 모델의 경우 내연기관 대비 배터리 팩 무게로 인해 공차중량이 300킬로그램에서 500킬로그램 이상 무거우므로, 일반 하중 규격(SL) 타이어를 장착할 경우 과도한 타이어 숄더 마모 및 파손 위험이 따릅니다. 이에 따라 고하중 지지 성능을 갖춘 <strong>XL(Extra Load)</strong> 혹은 전기차 전용 <strong>HL(High Load)</strong> 각인을 필히 점검해야 합니다.</p>
+
+            <h3>1. 주요 하중지수 정격 기준표</h3>
+            <p>하중지수는 바퀴 1개가 적정 공기압 상태에서 감당할 수 있는 최대 하중을 정의한 코드입니다. 차량 총중량을 4로 나눈 값보다 높은 하중지수를 가진 타이어를 선택해야 합니다.</p>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>하중지수 코드</th>
+                        <th>1본당 최대 허용 하중 (kg)</th>
+                        <th>4본 1세트 총 지지 하중 (kg)</th>
+                        <th>대표 적용 차종 카테고리</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>88</strong></td>
+                        <td>560 kg</td>
+                        <td>2,240 kg</td>
+                        <td>경차, 소형 해치백 (모닝, 레이, 아반떼 기본형)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>92</strong></td>
+                        <td>630 kg</td>
+                        <td>2,520 kg</td>
+                        <td>준중형 세단 (아반떼, K3)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>96</strong></td>
+                        <td>710 kg</td>
+                        <td>2,840 kg</td>
+                        <td>중형 세단 (쏘나타, K5)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>98</strong></td>
+                        <td>750 kg</td>
+                        <td>3,000 kg</td>
+                        <td>준대형 세단, 소형 SUV (그랜저, K8, 투싼)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>100</strong></td>
+                        <td>800 kg</td>
+                        <td>3,200 kg</td>
+                        <td>중대형 세단 및 중형 SUV (제네시스 G80, 싼타페, 쏘렌토)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>104</strong></td>
+                        <td>900 kg</td>
+                        <td>3,600 kg</td>
+                        <td>대형 SUV, 미니밴, 전기차 (펠리세이드, 카니발, EV9, 아이오닉9)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>108</strong></td>
+                        <td>1,000 kg</td>
+                        <td>4,000 kg</td>
+                        <td>고중량 럭셔리 대형 SUV (제네시스 GV80, BMW X5, 벤츠 GLE)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. 타이어 속도기호 허용 한계 규격표</h3>
+            <p>속도기호는 타이어가 형태 변형과 과열로 인한 파열(스탠딩 웨이브 현상) 없이 버틸 수 있는 지속 주행 최고 속도입니다.</p>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>속도기호 알파벳</th>
+                        <th>최대 허용 속도 (km/h)</th>
+                        <th>타이어 성향 및 주요 용도</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>T</strong></td>
+                        <td>190 km/h</td>
+                        <td>도심형 경차, 스노우 윈터 타이어 표준</td>
+                    </tr>
+                    <tr>
+                        <td><strong>H</strong></td>
+                        <td>210 km/h</td>
+                        <td>표준 사계절 컴포트 투어링 타이어</td>
+                    </tr>
+                    <tr>
+                        <td><strong>V</strong></td>
+                        <td>240 km/h</td>
+                        <td>고성능 프리미엄 세단 및 SUV 올시즌 타이어</td>
+                    </tr>
+                    <tr>
+                        <td><strong>W</strong></td>
+                        <td>270 km/h</td>
+                        <td>울트라 하이 퍼포먼스(UHP) 스포츠 타이어</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Y</strong></td>
+                        <td>300 km/h</td>
+                        <td>슈퍼 스포츠카, 고출력 프리미엄 퍼포먼스 타이어</td>
+                    </tr>
+                    <tr>
+                        <td><strong>(Y)</strong></td>
+                        <td>300 km/h 초과</td>
+                        <td>초고성능 하이퍼카 전용 특수 레이싱 컴파운드 타이어</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3. DOT 제조일자 주차 및 트레드웨어(UTQG) 판독법</h3>
+            <p>타이어 외벽에 음각으로 각인된 <strong>DOT(Department of Transportation)</strong> 코드 중 가장 끝부분의 타원형 박스에 표기된 4자리 숫자는 생산 주차와 생산 연도를 의미합니다. 예컨대 <strong>2326</strong>으로 각인되어 있다면, 앞의 23은 해당 연도의 23번째 주(대략 6월 초순)를 뜻하며, 뒤의 26은 생산 연도인 <strong>2026년</strong>을 뜻합니다. 타이어는 보관 조건이 양호하더라도 고무 내부 유분 증발로 인한 경화 현상이 발생하므로, 신품 교체 시 통상 생산된 지 3개월에서 1년 미만의 재고를 장착하는 것이 가장 이상적입니다.</p>
+            <p>또한 북미 운수국 기준의 <strong>UTQG(Uniform Tire Quality Grading)</strong> 마킹은 세 가지 지표를 제공합니다.</p>
+            <p>첫째, <strong>Treadwear (내마모도 지수)</strong>: 기준치 100을 바탕으로 400, 500, 600 등 숫자가 클수록 타이어 마일리지가 길어져 경제적입니다. 고성능 썸머 스포츠 타이어는 통상 200에서 300 사이의 낮은 트레드웨어를 가지며, 국산 컴포트 사계절 타이어는 500에서 680 수준의 긴 수명을 제공합니다.</p>
+            <p>둘째, <strong>Traction (제동력 등급)</strong>: 젖은 노면 제동 성능을 나타내며 AA, A, B, C 순으로 우수합니다.</p>
+            <p>셋째, <strong>Temperature (내열성 등급)</strong>: 고속 주행 시 발생하는 마찰열 발산 능력을 의미하며 A, B, C 순으로 분류됩니다.</p>
+        </section>
+
+        <!-- SECTION 4: 2026년 국내외 35대 타이어 모델 스펙 및 가격 비용 분석 -->
+        <section id="section-models-2026">
+            <h2>국내외 35대 핵심 타이어 모델 스펙과 2026년 가격 비용 비교</h2>
+            <p>타이어 교체 비용 견적은 단면폭, 편평비, 림 인치 규격에 따라 편차가 큽니다. 대표 규격인 18인치(245/45R18) 및 19인치(245/40R19)를 기준으로 대한민국 소비자들이 가장 많이 선호하는 국내 3사(한국, 금호, 넥센) 및 글로벌 3대 수입 브랜드(미쉐린, 콘티넨탈, 피렐리/브리지스톤)의 대표 35개 모델 라인업의 특성과 예상 장착 비용을 비교 제시합니다.</p>
+
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>브랜드</th>
+                        <th>대표 타이어 모델명</th>
+                        <th>주요 포지셔닝 및 특장점</th>
+                        <th>평균 트레드웨어</th>
+                        <th>본당 예상 최저가 금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>한국타이어</td>
+                        <td><strong>벤투스 에어 S (Ventus air S)</strong></td>
+                        <td>최신 초저소음 올시즌 프리미엄 세단 컴포트</td>
+                        <td>560</td>
+                        <td>165,000원</td>
+                    </tr>
+                    <tr>
+                        <td>한국타이어</td>
+                        <td><strong>벤투스 S2 AS (Ventus S2 AS)</strong></td>
+                        <td>스테디셀러 정숙성 및 고속 주행 안정성</td>
+                        <td>600</td>
+                        <td>155,000원</td>
+                    </tr>
+                    <tr>
+                        <td>한국타이어</td>
+                        <td><strong>키너지 EX (Kinergy EX)</strong></td>
+                        <td>가성비 최우선 경제형 투어링 타이어</td>
+                        <td>520</td>
+                        <td>98,000원</td>
+                    </tr>
+                    <tr>
+                        <td>한국타이어</td>
+                        <td><strong>다이나프로 HPX (Dynapro HPX)</strong></td>
+                        <td>SUV 전용 프리미엄 정숙 사계절 롱마일리지</td>
+                        <td>680</td>
+                        <td>170,000원</td>
+                    </tr>
+                    <tr>
+                        <td>한국타이어</td>
+                        <td><strong>아이온 evo (iON evo)</strong></td>
+                        <td>전기차(EV) 전용 저회전저항 극저소음 타이어</td>
+                        <td>480</td>
+                        <td>215,000원</td>
+                    </tr>
+                    <tr>
+                        <td>한국타이어</td>
+                        <td><strong>벤투스 S1 evo3 (Ventus S1 evo3)</strong></td>
+                        <td>유럽형 고성능 썸머 스포츠 정밀 핸들링</td>
+                        <td>320</td>
+                        <td>180,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>마제스티X 솔루스 TA92 (Majesty X)</strong></td>
+                        <td>최고급 플래그십 승차감 및 노면 소음 분산</td>
+                        <td>600</td>
+                        <td>170,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>마제스티9 솔루스 TA91</strong></td>
+                        <td>국산 준대형 이상 세단 선호도 최상위 모델</td>
+                        <td>560</td>
+                        <td>150,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>솔루스 TA51 (Solus TA51)</strong></td>
+                        <td>중형 세단 최적화 밸런스형 실속 가성비</td>
+                        <td>640</td>
+                        <td>115,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>솔루스 TA21 (Solus TA21)</strong></td>
+                        <td>보급형 경제 엔트리 투어링 타이어</td>
+                        <td>540</td>
+                        <td>92,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>크루젠 HP71 (Crugen HP71)</strong></td>
+                        <td>국산 도심형 SUV 표준 베스트셀러 모델</td>
+                        <td>640</td>
+                        <td>158,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>크루젠 KL33 (Crugen KL33)</strong></td>
+                        <td>순정 출고용 실속형 SUV 올시즌 타이어</td>
+                        <td>440</td>
+                        <td>125,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>엑스타 PS71 (Ecsta PS71)</strong></td>
+                        <td>스포츠 퍼포먼스 가성비 튜닝 썸머 타이어</td>
+                        <td>320</td>
+                        <td>135,000원</td>
+                    </tr>
+                    <tr>
+                        <td>금호타이어</td>
+                        <td><strong>이노뷔 프리미엄 (EnnoV Premium)</strong></td>
+                        <td>HLC 고하중 특화 차세대 전기차 전용 타이어</td>
+                        <td>500</td>
+                        <td>205,000원</td>
+                    </tr>
+                    <tr>
+                        <td>넥센타이어</td>
+                        <td><strong>엔페라 슈프림 (N'FERA Supreme)</strong></td>
+                        <td>세단용 최고급 정숙성 및 롱라이프 마일리지</td>
+                        <td>580</td>
+                        <td>135,000원</td>
+                    </tr>
+                    <tr>
+                        <td>넥센타이어</td>
+                        <td><strong>엔페라 AU7 (N'FERA AU7)</strong></td>
+                        <td>흡음 블록 내장 플래그십 프리미엄 투어링</td>
+                        <td>500</td>
+                        <td>155,000원</td>
+                    </tr>
+                    <tr>
+                        <td>넥센타이어</td>
+                        <td><strong>엔페라 RU5 (N'FERA RU5)</strong></td>
+                        <td>도심형 고성능 SUV 전용 프리미엄 모델</td>
+                        <td>500</td>
+                        <td>130,000원</td>
+                    </tr>
+                    <tr>
+                        <td>넥센타이어</td>
+                        <td><strong>로디안 GTX (Roadian GTX)</strong></td>
+                        <td>SUV 전용 고내마모 가성비 올라운더</td>
+                        <td>680</td>
+                        <td>120,000원</td>
+                    </tr>
+                    <tr>
+                        <td>넥센타이어</td>
+                        <td><strong>엔프리즈 AH8 (N'Priz AH8)</strong></td>
+                        <td>국산 준중형 순정 장착 국민 표준 타이어</td>
+                        <td>500</td>
+                        <td>88,000원</td>
+                    </tr>
+                    <tr>
+                        <td>넥센타이어</td>
+                        <td><strong>엔페라 스포츠 (N'FERA Sport)</strong></td>
+                        <td>유럽 드라이빙 감각 스포츠 퍼포먼스</td>
+                        <td>300</td>
+                        <td>140,000원</td>
+                    </tr>
+                    <tr>
+                        <td>미쉐린타이어</td>
+                        <td><strong>프라이머시 4 플러스 (Primacy 4+)</strong></td>
+                        <td>젖은 노면 제동 및 승차감 최상급 투어링</td>
+                        <td>340</td>
+                        <td>235,000원</td>
+                    </tr>
+                    <tr>
+                        <td>미쉐린타이어</td>
+                        <td><strong>파일럿 스포츠 5 (Pilot Sport 5)</strong></td>
+                        <td>최고의 접지력과 핸들링 반응 스포츠 UHP</td>
+                        <td>300</td>
+                        <td>260,000원</td>
+                    </tr>
+                    <tr>
+                        <td>미쉐린타이어</td>
+                        <td><strong>크로스클라이밋 2 (CrossClimate 2)</strong></td>
+                        <td>3PMSF 유럽 인증 올웨더 전천후 타이어 성지</td>
+                        <td>560</td>
+                        <td>210,000원</td>
+                    </tr>
+                    <tr>
+                        <td>미쉐린타이어</td>
+                        <td><strong>파일럿 스포츠 4S (PS4S)</strong></td>
+                        <td>고출력 스포츠 슈퍼카 플래그십 퍼포먼스</td>
+                        <td>300</td>
+                        <td>340,000원</td>
+                    </tr>
+                    <tr>
+                        <td>미쉐린타이어</td>
+                        <td><strong>e-프라이머시 (e-Primacy)</strong></td>
+                        <td>친환경 저탄소 전비 향상 전기차 타이어</td>
+                        <td>340</td>
+                        <td>245,000원</td>
+                    </tr>
+                    <tr>
+                        <td>콘티넨탈</td>
+                        <td><strong>울트라콘택트 UC6 (UltraContact UC6)</strong></td>
+                        <td>다이아몬드 패턴 젖은 노면 고안정성 투어링</td>
+                        <td>340</td>
+                        <td>175,000원</td>
+                    </tr>
+                    <tr>
+                        <td>콘티넨탈</td>
+                        <td><strong>맥스콘택트 MC6 (MaxContact MC6)</strong></td>
+                        <td>역동적 반응성과 제동력 결합 스포츠 모델</td>
+                        <td>340</td>
+                        <td>195,000원</td>
+                    </tr>
+                    <tr>
+                        <td>콘티넨탈</td>
+                        <td><strong>컴포트콘택트 CC7 (ComfortContact CC7)</strong></td>
+                        <td>노면 소음 차단 헬름홀츠 공명기 기술 적용</td>
+                        <td>380</td>
+                        <td>165,000원</td>
+                    </tr>
+                    <tr>
+                        <td>콘티넨탈</td>
+                        <td><strong>프로콘택트 TX (ProContact TX)</strong></td>
+                        <td>북미형 제네시스 순정 정숙 사계절 컴포트</td>
+                        <td>500</td>
+                        <td>210,000원</td>
+                    </tr>
+                    <tr>
+                        <td>콘티넨탈</td>
+                        <td><strong>익스트림콘택트 DWS06 Plus</strong></td>
+                        <td>눈길 마른노면 고성능 올시즌 올라운더</td>
+                        <td>560</td>
+                        <td>225,000원</td>
+                    </tr>
+                    <tr>
+                        <td>브리지스톤</td>
+                        <td><strong>투란자 T005A (Turanza T005A)</strong></td>
+                        <td>고속 직진 안정성 및 중후한 승차감</td>
+                        <td>320</td>
+                        <td>190,000원</td>
+                    </tr>
+                    <tr>
+                        <td>브리지스톤</td>
+                        <td><strong>알렌자 LX100 (Alenza LX100)</strong></td>
+                        <td>럭셔리 SUV 전용 정숙성 극대화 올시즌</td>
+                        <td>400</td>
+                        <td>230,000원</td>
+                    </tr>
+                    <tr>
+                        <td>피렐리</td>
+                        <td><strong>신투라토 P7 올시즌 (Cinturato P7)</strong></td>
+                        <td>유럽 프리미엄 세단 순정 인증 사계절 모델</td>
+                        <td>500</td>
+                        <td>220,000원</td>
+                    </tr>
+                    <tr>
+                        <td>피렐리</td>
+                        <td><strong>피제로 PZ4 (P ZERO PZ4)</strong></td>
+                        <td>레이싱 F1 기술 접목 극한 그립 퍼포먼스</td>
+                        <td>300</td>
+                        <td>290,000원</td>
+                    </tr>
+                    <tr>
+                        <td>굿이어</td>
+                        <td><strong>이글 F1 어시메트릭 6 (Asymmetric 6)</strong></td>
+                        <td>유럽 전문지 테스트 석권 고성능 스포츠 UHP</td>
+                        <td>300</td>
+                        <td>240,000원</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION 5: 구매 채널별 견적 차이, 렌탈 요금제 및 약정/위약금 분석 -->
+        <section id="section-purchase-strategy">
+            <h2>타이어 구매 채널 비교: 다이렉트 최저가 공임 조합 vs 렌탈 요금제 분석</h2>
+            <p>타이어 교체 비용을 구성하는 3대 요소는 <strong>타이어 본체 가격</strong>, <strong>탈부착 장착 공임</strong>, 그리고 <strong>휠얼라인먼트 교정 비용</strong>입니다. 과거에는 집 근처 오프라인 대리점을 방문하여 권장 소비자가격 그대로 교체하는 방식이 주를 이루었으나, 2026년 현재는 고물가 시대를 맞아 다양한 다이렉트 경로와 렌탈 구독 서비스가 자리잡았습니다.</p>
+
+            <h3>1. 채널별 실구매 가격 차이점 및 장단점 비교</h3>
+            <table class="spec-table">
+                <thead>
+                    <tr>
+                        <th>구매 채널 구분</th>
+                        <th>비용 산출 구조 (4본 기준)</th>
+                        <th>핵심 장점</th>
+                        <th>단점 및 주의사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>인터넷 최저가 + 공임나라</strong></td>
+                        <td>온라인 타이어 구입비 + 표준 공임(개당 1.5~2.5만)</td>
+                        <td>실제 지출 총금액이 가장 저렴함</td>
+                        <td>배송 수령 번거로움, DOT 생산주차 확인 필요</td>
+                    </tr>
+                    <tr>
+                        <td><strong>오프라인 브랜드 전문점</strong><br>(티스테이션, 타이어프로 등)</td>
+                        <td>타이어 본체에 장착 공임 기본 포함 책정</td>
+                        <td>전문 장비 기반 신속한 장착, 정기 무상 점검</td>
+                        <td>온라인 다이렉트 최저가 대비 15~30% 비쌈</td>
+                    </tr>
+                    <tr>
+                        <td><strong>타이어 렌탈 구독 서비스</strong><br>(넥센 넥스트레벨 등)</td>
+                        <td>월 정기 렌탈 요금제 (12개월, 24개월, 36개월 약정)</td>
+                        <td>초기 계약금 0원, 제휴카드 할인시 월 0원대 가능</td>
+                        <td>중도 해지 시 위약금 발생, 총 납부금 이자 고려 필요</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. 타이어 렌탈 요금제 계약 조건 및 위약금 환불 규정</h3>
+            <p>타이어 렌탈은 초기 4본 교체 시 수반되는 50만원에서 100만원 이상의 목돈 지출을 월 분납 요금으로 분산시키는 금융 결합형 서비스입니다. 12개월 무약정 단기 플랜부터 24개월, 36개월 장기 약정 플랜이 존재합니다. 제휴 신용카드 전월 실적(예: 30만원 이상)을 충족할 경우 월 1만원에서 1만 5천원의 렌탈료 청구 할인을 적용받아 실질 부담금을 획기적으로 낮출 수 있습니다.</p>
+            <p>그러나 계약 전 위약금 규정을 명확히 인지해야 합니다. 렌탈 계약 기간 도중 차량 매각이나 폐차 등으로 중도 해지를 요청할 경우, <strong>잔여 렌탈료 합산액의 30퍼센트에서 50퍼센트에 달하는 중도해지 위약금</strong>과 기제공된 휠얼라인먼트, 위치교환 등 부가 서비스 원상복구 수수료가 청구되므로, 약정 기간 만료 시까지 차량을 계속 운행할 예정인 소비자에게 적합합니다.</p>
+        </section>
+
+        <!-- SECTION 6: 커뮤니티 성지 좌표 분석 및 AI 기반 타이어 컨설팅 활용법 -->
+        <section id="section-community-ai">
+            <h2>온라인 커뮤니티 성지 좌표 분석 및 최신 AI 타이어 컨설팅 활용법</h2>
+            <p>자동차 전문 커뮤니티인 <strong>보배드림</strong>, <strong>에펨코리아(펨코) 차·바이크 게시판</strong>, <strong>디시인사이드 자동차 갤러리</strong> 등에서는 수많은 운전자들이 실구매 내돈내산 후기와 최저가 성지 매장 좌표를 공유하고 있습니다. 인터넷 포털 사이트나 오픈마켓의 정기 빅세일 시즌(빅스마일데이, 십일절, 네이버 쇼핑 페스타 등)에는 특정 카드사 즉시 할인, 캐시백 지원금, 주유 상품권 지급 이벤트가 중복 적용되어 정가 대비 최대 40퍼센트 이상 저렴하게 구매할 수 있는 기회가 열립니다.</p>
+
+            <h3>1. 커뮤니티 유저들이 추천하는 실전 타이어 교체 요령</h3>
+            <p>첫째, <strong>포털 최저가 검색 시 배송비 조항 확인</strong>: 포털 사이트에서 가장 싼곳으로 노출되는 쇼핑몰 중 일부는 타이어 개당 가격을 비상식적으로 낮추는 대신 본당 3만원 이상의 과도한 배송비를 책정하거나, 자사 지정 장착점 방문을 강제하며 과도한 장착 공임을 요구하는 사례가 있으므로 최종 결제 금액을 검증해야 합니다.</p>
+            <p>둘째, <strong>생산주차(DOT) 사전 확인</strong>: 지나치게 싼 가격의 재고품은 2년 이상 지난 이월 상품일 가능성이 있으므로, 주문 시 최근 6개월 이내 생산품 발송 조건을 명시하거나 확인 후 주문하는 것이 추천됩니다.</p>
+            <p>셋째, <strong>휠얼라인먼트 필수 여부 판단</strong>: 단순히 타이어만 교체할 때는 휠 밸런스(고속 주행 시 핸들 떨림 방지)만으로 충분하지만, 기존 타이어에 편마모가 심했거나 주행 중 차량이 한쪽으로 쏠리는 현상이 있었다면 휠얼라인먼트(하체 정렬 교정)를 반드시 병행해야 편마모 재발을 막을 수 있습니다.</p>
+
+            <h3>2. AI 및 금융 플랫폼을 통한 맞춤형 타이어 상담 활용</h3>
+            <p>최근에는 <strong>네이버 AI 탭</strong>, <strong>챗지피티(ChatGPT)</strong>, <strong>제미나이(Gemini)</strong> 등 첨단 대화형 인공지능을 활용하여 내 차의 차종, 거주 지역(강설량이 많은 지역인지 여부), 연간 주행거리, 운전 성향(정숙성 위주 컴포트 vs 와인딩 스포츠)을 입력하여 가장 최적화된 타이어 모델을 1대1 맞춤 컨설팅받는 트렌드가 급부상했습니다.</p>
+            <p>또한 <strong>토스(Toss)</strong>, <strong>카카오톡</strong> 자동차 관리 서비스를 연동하면 차량 번호 입력만으로 내 차의 공식 출고 순정 타이어 규격이 자동 조회되며, 인근 최저가 장착점 예약, 교체 주기 알림, 모바일 온누리상품권 또는 제휴 주유상품권 리워드 혜택까지 한 번에 안내받을 수 있어 탐색 시간을 크게 절감할 수 있습니다.</p>
+        </section>
+
+        <!-- SECTION 7: 자주 묻는 질문 FAQ (아코디언 UI) -->
+        <section id="section-faq">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <p>타이어 사이즈 선택 및 교체 과정에서 운전자들이 가장 빈번하게 질의하는 6가지 핵심 항목에 대한 공학적 답변을 제공합니다.</p>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>순정 타이어 규격보다 폭이 넓은 광폭 타이어로 인치업하면 어떤 장단점이 있나요?</span>
+                        <span class="indicator">열기</span>
+                    </button>
+                    <div class="faq-answer">
+                        단면폭이 넓어지면 지면과의 접지 면적이 증가하여 마른 노면에서의 제동력과 고속 코너링 시 횡방향 지지력이 향상되는 뚜렷한 장점이 있습니다. 반면 접지 저항 증가로 인해 복합 연비가 3~5퍼센트가량 감소하고, 노면 빗길 배수성이 저하되어 수막현상 발생 위험이 상대적으로 커지며, 편평비가 낮아짐에 따라 노면 요철 충격이 그대로 전달되어 승차감이 단단해지는 단점이 공존합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>전륜과 후륜의 마모도가 다른데 2본만 교체할 경우 새 타이어를 앞뒤 중 어디에 장착해야 하나요?</span>
+                        <span class="indicator">열기</span>
+                    </button>
+                    <div class="faq-answer">
+                        글로벌 타이어 제조사 및 교통안전 당국의 공통 권고안에 따르면, 신품 타이어 2본은 <strong>후륜(뒷바퀴)</strong>에 장착하는 것이 안전상 훨씬 유리합니다. 전륜 구동 차량이라도 뒷바퀴 접지력이 상실되면 빗길 제동 시 차량 후미가 미끄러지며 스핀하는 오버스티어 현상이 발생하여 일반 운전자가 차체를 제어하기 불가능해지기 때문입니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>사계절 타이어(M+S)와 올웨더(3PMSF) 타이어의 실질적인 차이점은 무엇인가요?</span>
+                        <span class="indicator">열기</span>
+                    </button>
+                    <div class="faq-answer">
+                        사계절(Mud+Snow) 타이어는 봄, 여름, 가을 3계절 및 가벼운 눈길에 대응하는 한국 내수형 세팅으로 정숙성과 승차감에 초점이 맞춰져 있습니다. 반면 올웨더(All-Weather) 타이어는 유럽 공인 삼봉산 눈송이 기호(3PMSF)를 획득하여 영하 7도 이하의 혹한기 결빙 노면과 폭설 상황에서도 고무가 유연성을 유지하는 저온 컴파운드를 적용하여 겨울철 제동 거리를 획기적으로 단축시켜 줍니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>타이어 마모 한계선(TWI) 확인 방법과 적정 교체 시기는 언제인가요?</span>
+                        <span class="indicator">열기</span>
+                    </button>
+                    <div class="faq-answer">
+                        타이어 트레드 홈 사이 바닥면에는 1.6mm 높이의 사각형 돌출 블록인 마모 한계선이 배치되어 있습니다. 사이드월 상단의 삼각형 표식을 따라가면 쉽게 찾을 수 있으며, 트레드 블록 표면이 이 마모 한계선과 일치하면 즉시 교체해야 합니다. 백원짜리 동전을 홈에 거꾸로 끼웠을 때 이순신 장군의 사모관대가 훤히 보인다면 잔여 홈 깊이가 2mm 미만이므로 빗길 수막현상 방지를 위해 즉시 교체해야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>런플랫(Run-Flat) 타이어 장착 차량에 일반 타이어를 끼워도 괜찮나요?</span>
+                        <span class="indicator">열기</span>
+                    </button>
+                    <div class="faq-answer">
+                        장착 자체는 완벽히 가능합니다. 일반 타이어로 교체 시 사이드월이 유연해져 승차감이 비약적으로 부드러워지고 타이어 가격 또한 30퍼센트 이상 저렴해집니다. 다만 런플랫 차량은 스페어 타이어나 타이어 리페어 키트(실란트 컴프레셔)가 트렁크에 구비되어 있지 않은 경우가 많으므로, 일반 타이어 장착 시 펑크 수리용 리페어 키트를 별도로 구비하고 보험사 긴급출동 서비스를 확인해 두어야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>적정 공기압 수치는 어디서 확인하고 계절별로 얼마나 넣어야 하나요?</span>
+                        <span class="indicator">열기</span>
+                    </button>
+                    <div class="faq-answer">
+                        타이어 본체에 적힌 최대 공기압(Max PSI)이 아닌, <strong>운전석 도어 프레임 스티커에 적힌 차량 제조사 규정 냉간 공기압</strong>을 기준으로 주입해야 합니다. 통상 승용 세단 기준 34~36 PSI, SUV 기준 36~38 PSI가 표준입니다. 겨울철에는 기온 강하로 기압이 수축하므로 기준치보다 약 10퍼센트(2~3 PSI) 높여 주입하는 것이 권장됩니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: 공식 기관 및 신뢰성 공인 외부 출처 클러스터 -->
+        <section id="section-references">
+            <div class="reference-cluster">
+                <h3>공인된 신뢰성 외부 사이트 참고 자료</h3>
+                <p>타이어 규격 및 자동차 안전 운행에 관한 공신력 있는 기관의 검증된 공식 기술 자료를 참고하세요.</p>
+                <ul class="reference-list">
+                    <li>
+                        <a href="https://tirerentztrustn.koreahankang.com" target="_blank" rel="noopener noreferrer">오토모빌 테크 인포 센터: 2026 차량별 타이어 공학 스펙 가이드</a>
+                        <div class="site-desc">사이드월 하중지수, 속도기호 및 차량 림 오프셋 호환성 분석 데이터베이스</div>
+                    </li>
+                    <li>
+                        <a href="https://namu.wiki/w/%ED%83%80%EC%9D%B4%EC%96%B4" target="_blank" rel="noopener noreferrer">나무위키: 타이어 기술 표준 및 분류 체계 상세 정보</a>
+                        <div class="site-desc">타이어의 역사, 래디얼 및 바이어스 구조 차이점, 국내외 제조사별 라인업 종합 문서</div>
+                    </li>
+                    <li>
+                        <a href="https://www.kotsa.or.kr" target="_blank" rel="noopener noreferrer">TS 한국교통안전공단: 자동차 검사 기준 및 타이어 마모 안전 규정</a>
+                        <div class="site-desc">타이어 마모 한계 기준 법규, 휠 타이어 튜닝 구조변경 승인 지침 및 사고 예방 연구 자료</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tag-cloud" aria-label="연관 카테고리 태그">
+                <span>타이어사이즈보는법</span>
+                <span>타이어규격계산기</span>
+                <span>하중지수속도기호</span>
+                <span>타이어가격비교</span>
+                <span>DOT제조일자</span>
+                <span>한국타이어벤투스</span>
+                <span>금호타이어마제스티9</span>
+                <span>넥센엔페라슈프림</span>
+                <span>미쉐린크로스클라이밋2</span>
+                <span>콘티넨탈UC6</span>
+                <span>공임나라장착비용</span>
+                <span>타이어렌탈요금제</span>
+                <span>보배드림타이어후기</span>
+                <span>네이버AI타이어추천</span>
+            </div>
+        </section>
+
     </main>
-  </body>
-</html>
+
+    <script>
+        // 타이어 규격 외경 오차 인터랙티브 연산 로직
+        document.getElementById('btn-run-calc').addEventListener('click', function() {
+            const origW = parseFloat(document.getElementById('orig-width').value);
+            const origP = parseFloat(document.getElementById('orig-profile').value);
+            const origR = parseFloat(document.getElementById('orig-rim').value);
+
+            const newW = parseFloat(document.getElementById('new-width').value);
+            const newP = parseFloat(document.getElementById('new-profile').value);
+            const newR = parseFloat(document.getElementById('new-rim').value);
+
+            // 외경 계산 공식 (mm) = (Rim inch * 25.4) + (2 * Width * (Profile / 100))
+            const origDiameter = (origR * 25.4) + (2 * origW * (origP / 100));
+            const newDiameter = (newR * 25.4) + (2 * newW * (newP / 100));
+
+            const diffMm = newDiameter - origDiameter;
+            const diffPct = (diffMm / origDiameter) * 100;
+            const speedError = 100 * (newDiameter / origDiameter);
+
+            document.getElementById('res-orig-dia').textContent = origDiameter.toFixed(1) + ' mm';
+            document.getElementById('res-new-dia').textContent = newDiameter.toFixed(1) + ' mm';
+            
+            const diffSign = diffMm >= 0 ? '+' : '';
+            document.getElementById('res-diff-mm').textContent = diffSign + diffMm.toFixed(1) + ' mm';
+            document.getElementById('res-diff-pct').textContent = diffSign + diffPct.toFixed(2) + ' %';
+            document.getElementById('res-speed-err').textContent = speedError.toFixed(1) + ' km/h';
+
+            const safetyEl = document.getElementById('res-safety-eval');
+            if (Math.abs(diffPct) <= 3.0) {
+                safetyEl.textContent = '장착 적합 (안전 허용 오차 이내)';
+                safetyEl.style.color = '#0f766e';
+            } else {
+                safetyEl.textContent = '장착 주의 (속도계 오차 및 간섭 우려)';
+                safetyEl.style.color = '#b91c1c';
+            }
+
+            const resPanel = document.getElementById('calc-result-display');
+            resPanel.classList.add('visible');
+        });
+
+        // FAQ 아코디언 토글 제어 인터랙션
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const indicator = button.querySelector('.indicator');
+                const isOpen = answer.classList.contains('open');
+
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.classList.remove('open'));
+                document.querySelectorAll('.faq-question .indicator').forEach(ind => ind.textContent = '열기');
+
+                if (!isOpen) {
+                    answer.classList.add('open');
+                    indicator.textContent = '닫기';
+                }
+            });
+        });
+    </script>
+  
